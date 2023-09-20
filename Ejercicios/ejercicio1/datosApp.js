@@ -7,13 +7,13 @@ var persona = {
   fNac: ""
 }
 
-function guardarPulsado(){
-  var nombre = document.getElementById("name").value 
-  var pApe = document.getElementById("pApe").value 
-  var sApe = document.getElementById("sApe").value 
-  var dni = document.getElementById("dni").value 
-  var fNac = document.getElementById("fNac").value 
-  if(returnErrores(nombre,pApe,sApe,dni,fNac)){
+function guardarPulsado() {
+  var nombre = document.getElementById("name").value
+  var pApe = document.getElementById("pApe").value
+  var sApe = document.getElementById("sApe").value
+  var dni = document.getElementById("dni").value
+  var fNac = document.getElementById("fNac").value
+  if (returnErrores(nombre, pApe, sApe, dni, fNac)) {
     persona.nombre = nombre
     persona.pApe = pApe
     persona.sApe = sApe
@@ -103,19 +103,19 @@ function returnErrores(name, pApe, sApe, dni, fNac) {
   if (p && n && s && d && f) {
     return true
   } else {
-    if(!n){
+    if (!n) {
       msgError = msgError + "El nombre debe tener entre 3 y 30 caracteres.\n"
     }
-    if(!p){
+    if (!p) {
       msgError = msgError + "El primer apellido debe tener entre 2 y 30 caracteres.\n"
     }
-    if(!s){
+    if (!s) {
       msgError = msgError + "El segundo apellido debe tener entre 2 y 30 caracteres.\n"
     }
-    if(!d){
+    if (!d) {
       msgError = msgError + "El formato del DNI es incorrecto.\n"
     }
-    if(!f){
+    if (!f) {
       msgError = msgError + "El formato de la fecha es incorrecto.\n"
     }
     alert(msgError)
