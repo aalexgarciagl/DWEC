@@ -116,7 +116,7 @@ function returnErrores(name, pApe, sApe, dni, fNac) {
       msgError = msgError + "El formato del DNI es incorrecto.\n"
     }
     if (!f) {
-      msgError = msgError + "El formato de la fecha es incorrecto.\n"
+      msgError = msgError + "El formato de la fecha es incorrecto. (dd/mm/yyyy)\n"
     }
     alert(msgError)
   }
