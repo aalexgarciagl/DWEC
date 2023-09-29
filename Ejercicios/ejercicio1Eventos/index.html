@@ -9,14 +9,16 @@
 <body>
   iban
   <input type="text" id="idIban"> <input type="text" id="idCuenta">
+  <p id="errorIban"></p>
   <br>
   <br>
   Nº Tarjeta
-  <input type="text" id="nTar">
+  <input type="text" id="nTar" onchange="borrarCvv()">
   CVV
   <input type="text" id="cvv">
+  <p id="errorTar">asd</p>
   <br>
   <br>  
-  <Button>Guardar</Button>
+  <Button onclick="guardarPulsado()">Guardar</Button>
 </body>
 </html>
