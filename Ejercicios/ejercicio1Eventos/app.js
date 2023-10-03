@@ -30,7 +30,7 @@ function borrarCvv(){
 }
 
 function validarIdIban(idIban){
-  var regExp = /[ES76]|[ES78]/
+  var regExp = /[ES76]$|[ES78]$/
 
   if(regExp.test(idIban)){
     return true; 
